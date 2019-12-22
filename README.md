@@ -1,4 +1,4 @@
-# MUI Storybook
+# Material UI - Storybook
 Material UI Components Displayed on Storybook!
 
 <img width="1214" alt="Screen Shot 2019-12-22 at 2 26 50 PM" src="https://user-images.githubusercontent.com/31245853/71328147-266d2380-24c7-11ea-89ce-772ef4534e30.png">
