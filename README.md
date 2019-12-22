@@ -9,5 +9,8 @@ Displays Material UI Components in Storybook for easier theme design.
 `yarn` install node modules
 `yarn storybook` run storybook.
 
-## How to edit
+## How to Edit Material UI Theme
 View `.storybook/config.js` to see the `theme` object for Material-UI
+
+Contributions are welcomed!
+ 
