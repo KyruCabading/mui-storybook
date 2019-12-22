@@ -23,14 +23,17 @@ let theme = createMuiTheme({
     h2: {
       fontFamily: "DM Serif Display"
     },
+    h5: {
+      fontFamily: "DM Serif Display"
+    },
     button: {
       fontWeight: 600,
       textTransform: "capitalize"
     },
     overline: {
       fontSize: "0.7rem",
-      fontWeight: 600,
-      letterSpacing: 2
+      fontWeight: 900,
+      letterSpacing: 1.2
     }
   },
   shape: {
@@ -44,6 +47,9 @@ theme = {
     MuiPaper: {
       elevation: 0,
       square: true
+    },
+    MuiCard: {
+      elevation: 0
     }
   },
   overrides: {
