@@ -9,7 +9,10 @@ Material UI components Displayed on Storybook! Displays Material UI Components i
 
 ## How to Edit Material UI Theme
 View `.storybook/config.js` to see the `theme` object for Material-UI
-`let theme = createMuiTheme({});`
+
+```
+let theme = createMuiTheme({});
+```
 
 Contributions are welcomed!
  
