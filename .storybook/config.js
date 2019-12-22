@@ -1,6 +1,5 @@
 import React from "react";
 import { configure, addDecorator } from "@storybook/react";
-import { fade } from "@material-ui/core/styles/colorManipulator";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({});
