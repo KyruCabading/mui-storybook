@@ -37,7 +37,7 @@ let theme = createMuiTheme({
     }
   },
   shape: {
-    borderRadius: 4
+    borderRadius: 2
   }
 });
 
@@ -84,27 +84,40 @@ theme = {
     MuiExpansionPanel: {
       root: {
         "&:before": {
-          position: "absolute",
-          left: 0,
-          top: -1,
-          right: 0,
+          top: 0,
           height: 2,
-          content: '""',
           opacity: 0.3,
           backgroundColor: theme.palette.primary.main
         },
         "&$expanded": {
-          margin: "0px 0",
-          "&:first-child": {
-            marginTop: 0
-          },
-          "&:last-child": {
-            marginBottom: 0
-          },
+          margin: "0 0",
           "&:before": {
             opacity: 0.3
           }
+        },
+        "&$expanded + &": {
+          "&:before": {
+            display: "inline-block"
+          }
         }
+      }
+    },
+    MuiExpansionPanelSummary: {
+      root: {
+        minHeight: 64
+      },
+      "&$expanded": {
+        minHeight: 64
+      },
+      content: {
+        "&$expanded": {
+          margin: "12px 0"
+        }
+      }
+    },
+    MuiExpansionPanelDetails: {
+      root: {
+        padding: "0px 0px 24px"
       }
     }
   }
