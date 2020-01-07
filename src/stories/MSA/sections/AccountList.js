@@ -12,6 +12,10 @@ import {
   Grid
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
+import CreditCardIcon from "@material-ui/icons/CreditCard";
+import SchoolIcon from "@material-ui/icons/School";
+import EcoIcon from "@material-ui/icons/Eco";
 
 const AccountList = () => {
   return (
@@ -25,7 +29,7 @@ const AccountList = () => {
               </Typography>
             }
             action={
-              <Button size="small" variant="outlined" color="primary">
+              <Button variant="outlined" color="primary">
                 Add New
               </Button>
             }
@@ -37,9 +41,13 @@ const AccountList = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography color="primary" variant="overline">
-                  Bank
-                </Typography>
+                <AccountBalanceIcon color="secondary" />
+
+                <Box px={1}>
+                  <Typography color="primary" variant="overline">
+                    Bank
+                  </Typography>
+                </Box>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Grid container spacing={1}>
@@ -74,9 +82,12 @@ const AccountList = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography color="primary" variant="overline">
-                  Credit
-                </Typography>
+                <CreditCardIcon color="secondary" />
+                <Box px={1}>
+                  <Typography color="primary" variant="overline">
+                    Credit
+                  </Typography>
+                </Box>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Grid container spacing={1}>
@@ -111,9 +122,12 @@ const AccountList = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography color="primary" variant="overline">
-                  Loans
-                </Typography>
+                <SchoolIcon color="secondary" />
+                <Box mx={1}>
+                  <Typography color="primary" variant="overline">
+                    Loans
+                  </Typography>
+                </Box>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Grid container spacing={1}>
@@ -148,9 +162,12 @@ const AccountList = () => {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography color="primary" variant="overline">
-                  Credit
-                </Typography>
+                <EcoIcon color="secondary" />
+                <Box px={1}>
+                  <Typography color="primary" variant="overline">
+                    Investments
+                  </Typography>
+                </Box>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>

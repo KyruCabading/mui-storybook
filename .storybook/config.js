@@ -18,22 +18,26 @@ let theme = createMuiTheme({
   typography: {
     fontFamily: "DM Sans",
     h1: {
-      fontFamily: "DM Serif Display"
+      fontFamily: "DM Serif Text"
     },
     h2: {
-      fontFamily: "DM Serif Display"
+      fontFamily: "DM Serif Text"
     },
     h5: {
-      fontFamily: "DM Serif Display"
+      fontFamily: "DM Serif Text",
+      fontSize: "1.5625rem",
+      letterSpacing: "0.2px",
+      lineHeight: "34px"
     },
     button: {
-      fontWeight: 600,
-      textTransform: "capitalize"
+      fontWeight: "bold",
+      textTransform: "capitalize",
+      fontSize: "0.875rem"
     },
     overline: {
-      fontSize: "0.7rem",
-      fontWeight: 900,
-      letterSpacing: 1.2
+      fontSize: "0.75rem",
+      fontWeight: "bold",
+      letterSpacing: "1.11px"
     }
   },
   shape: {
@@ -54,7 +58,9 @@ theme = {
   },
   overrides: {
     MuiButton: {
+      root: {},
       outlinedPrimary: {
+        padding: "3px 15px",
         border: `2px solid ${theme.palette.primary.main}`,
         "&:hover": {
           border: `2px solid ${theme.palette.primary.main}`,
@@ -108,16 +114,16 @@ theme = {
       },
       "&$expanded": {
         minHeight: 64
-      },
-      content: {
-        "&$expanded": {
-          margin: "12px 0"
-        }
       }
     },
     MuiExpansionPanelDetails: {
       root: {
         padding: "0px 0px 24px"
+      }
+    },
+    MuiCardHeader: {
+      action: {
+        alignSelf: "center"
       }
     }
   }
